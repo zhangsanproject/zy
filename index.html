@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>中药材商城</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              tcm: {
+                dark: '#164a38', // Deep green text/buttons
+                primary: '#1f5e49', // Primary branding
+                light: '#eef7f2', // Light green background
+                accent: '#ffcd6a', // Gold/Yellow buttons
+                price: '#164a38', // Price color
+                border: '#d1e6db',
+              }
+            },
+            fontFamily: {
+              serif: ['"Noto Serif SC"', 'serif'],
+              sans: ['"Noto Sans SC"', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom scrollbar hiding for cleaner mobile look */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+      body {
+        background-color: #f5fbf7;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
